@@ -15,11 +15,14 @@ struct ContentView: View {
                     
                     HStack {
                         //Logo
-                        Image("logo")
+                        Image("Logo")
+                            .resizable(resizingMode: .tile)
+                            .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .cornerRadius(360)
                         
                         Spacer()
+                           
                         
                         //App Header
                             Text("PaintedPortals")
@@ -55,9 +58,7 @@ struct ContentView: View {
                             Spacer()
                             //Collection Nav. link
                             NavigationLink(destination: SecondView()) {
-                                Image("Placeholder")
-                                    .aspectRatio(contentMode: .fit)
-                                    .cornerRadius(360)
+                                
                                 Text("Collections")
                                     .font(.title3)
                                     .fontWeight(.semibold)
@@ -71,9 +72,7 @@ struct ContentView: View {
                             
                             //Gallery Nav. link
                             NavigationLink(destination: ThirdView()) {
-                                Image("Placeholder")
-                                    .aspectRatio(contentMode: .fit)
-                                    .cornerRadius(360)
+                               
                                 Text("Gallery")
                                     .font(.title3)
                                     .fontWeight(.medium)
