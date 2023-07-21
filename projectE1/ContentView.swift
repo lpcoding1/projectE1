@@ -15,7 +15,7 @@ struct ContentView: View {
                     
                     HStack {
                         //Logo
-                        Image("Logo")
+                        Image("logo")
                             .resizable(resizingMode: .tile)
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)

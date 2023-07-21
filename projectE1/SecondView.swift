@@ -21,7 +21,7 @@ struct SecondView: View {
             VStack {
                 HStack {
                     //Logo
-                    Image("Logo")
+                    Image("logo")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(360)
@@ -35,7 +35,6 @@ struct SecondView: View {
                         .font(.title)
                         .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
-                        .ignoresSafeArea(edges: .top)
                     
                     
                     Spacer()
@@ -43,8 +42,7 @@ struct SecondView: View {
                 .padding()
             }
             .background(Color(hue: 0.431, saturation: 0.593, brightness: 0.485))
-            .frame(width: 395, height: 70.0)
-            .ignoresSafeArea(edges: .top)
+            .frame(width: 395, height: 65.0)
             
             
             TextField("Enter name", text: $groupName)
@@ -67,7 +65,7 @@ struct SecondView: View {
             
             Spacer()
         }
-        .padding()
+        
     }
 }
     
